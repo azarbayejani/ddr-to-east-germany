@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "DDR to East Germany",
+	"version": "1.0",
+	"description": "Replaces the text 'Dance Dance Revolution' with 'East Germany'.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}

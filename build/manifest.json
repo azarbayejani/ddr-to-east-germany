@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "DDR-TO-EAST-GERMANY",
+  "version": "0.0.1",
+  "minimum_chrome_version": "40",
+  "description": "Replaces 'Dance Dance Revolution' and 'DDR' with 'East Germany'.",
+  "author": "Bobby Azarbayejani",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
